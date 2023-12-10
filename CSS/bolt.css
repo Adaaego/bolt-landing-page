@@ -197,3 +197,29 @@ a{
         font-size: 1.5rem;
     }
  }
+
+ /**Block**/
+ .block{
+    border: 2px solid blck; 
+    height: 100vh;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    
+    
+   }
+   
+   @media screen and (min-width:768px){
+     .block{
+ 
+         display: flex;
+         flex-direction: row;
+     
+    justify-content: space-between;
+    align-items: center;
+ 
+     }
+     .block__header{
+         max-width: 768px;
+     }
+   }
