@@ -132,3 +132,17 @@ a{
 .container .btn--block{
     margin-top: 1rem;
 }
+
+/*Collapsible*/
+.collapsible__content{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.7s;
+    color: black;
+}
+ .collapsible--expanded .collapsible__content{
+    max-height: 100%;
+    opacity: 1;
+    transition: opacity 0.7s;
+}
