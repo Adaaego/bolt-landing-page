@@ -211,6 +211,14 @@ a{
     
     
    }
+   div > P{
+    color: #fff;}
+    
+    .header__tagline{
+     font-size: 1.3rem;
+     font-weight: 300;
+     
+    }
    
    @media screen and (min-width:768px){
      .block{
