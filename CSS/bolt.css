@@ -6,6 +6,9 @@
     --color-btn: #34d186;
     
 }
+body{
+    background-color: var(--color-background);
+}
 
 *, *::before, *::after{
     box-sizing: border-box;
@@ -222,4 +225,12 @@ a{
      .block__header{
          max-width: 768px;
      }
+     div > P{
+        color: #fff;}
+        
+        .header__tagline{
+         font-size: 1.3rem;
+         font-weight: 300;
+         
+        }
    }
