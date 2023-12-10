@@ -80,3 +80,55 @@ a{
 .card__tagline{
     font-size: 1.2rem;
 }
+
+/*Form*/
+
+.input{
+    outline: none;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    color: #333;
+    background-color: #e4e4e4;
+    margin-bottom: 2.5rem;
+    border: 1px solid lightgray;
+    width: 100%;
+}
+.input--stretched{
+    width: 100%;
+}
+
+.input:focus{
+    border: 2px solid var(--color-link);
+
+}
+
+.label__header{
+    font-size: 1.3rem;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    
+}
+.checkbox{
+    margin-top: 2px;
+    
+
+}
+
+.l__checkbox{
+    display:inline;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    white-space: wrap;
+    
+}
+
+::placeholder{
+    font-size: 1.2rem;
+}
+
+.container .btn--block{
+    margin-top: 1rem;
+}
