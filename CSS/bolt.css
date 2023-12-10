@@ -38,3 +38,8 @@ h3{
 a{
     text-decoration: none;
 }
+
+/*LINK*/
+.link{
+    color: var(--color-link);
+}
