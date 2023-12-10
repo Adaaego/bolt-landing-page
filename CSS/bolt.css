@@ -62,3 +62,21 @@ a{
     width: 100%;
     text-align: center;
 }
+
+/*Card*/
+
+.card{
+    border-radius: 10px;
+    width: 35rem;
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+    
+    
+}
+.card__header{
+    display: block;
+}
+.card__tagline{
+    font-size: 1.2rem;
+}
