@@ -1,0 +1,12 @@
+/*Color Palette*/
+
+:root{
+    --color-background: #4450d5;
+    --color-link: #249e64;
+    --color-btn: #34d186;
+    
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
