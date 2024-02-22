@@ -8,6 +8,8 @@
 }
 body{
     background-color: var(--color-background);
+    
+
 }
 
 *, *::before, *::after{
@@ -18,227 +20,130 @@ body{
 /*Typography*/
 html{
     scroll-behavior: smooth;
-    font-size: 62.5%;
-    font-family: Inter, Arial, Helvetica, sans-serif;}
-    
-h1{
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #fff;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size:62.5%;
 }
-@media screen and (min-width:768px){
     h1{
-        font-size: 5rem;
+        font-size: 2.2rem;
     }
-}
-h2{
-    font-size:1.5rem;
-}
+    .line-break{
+        display: none;
+    }
+    
+    @media screen and (min-width:768px){
+        h1{
+            font-size:4.1rem;
+        }
+        .line-break{
+            display: inline;
+        }
 
-h3{
-    font-size: 1rem;
-}
-a{
-    text-decoration: none;
-}
+        .tagline__linebreak--mobile{
+            display: none;
+        }
+    }
 
-/*LINK*/
-.link{
-    color: var(--color-link);
-}
+    @media screen and (min-width:1024px){
+        h1{
+            font-size:5rem;
+        }
+    }
 
-/*Button*/
-.btn{
-    font-size: 1.3rem;
-    font-weight: 700;
-    border: none;
-    border-radius: 40px;
-    background-color: var(--color-btn);
-    color: #fff;
-    padding: 1.2rem 3rem;
-    height: 40px;
-    white-space: nowrap;   
-}
-
-.btn--block{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-}
-
-/*Card*/
-
-.card{
-    border-radius: 10px;
-    width: 35rem;
-    margin-top: 2rem;
-    padding: 1rem 1.5rem;
-    background-color: #fff;
+    li{
+        text-decoration: none;
+        list-style: none;
+        margin-right: 25px;
+    }
     
     
-}
-.card__header{
-    display: block;
-}
-.card__tagline{
-    font-size: 1.2rem;
-}
-
-/*Form*/
-
-.input{
-    outline: none;
-    border-radius: 3px;
-    font-size: 1.2rem;
-    padding: 1rem 2rem;
-    color: #333;
-    background-color: #e4e4e4;
-    margin-bottom: 2.5rem;
-    border: 1px solid lightgray;
-    width: 100%;
-}
-.input--stretched{
-    width: 100%;
-}
-
-.input:focus{
-    border: 2px solid var(--color-link);
-
-}
-
-.label__header{
-    font-size: 1.3rem;
-    display: block;
-    font-weight: bold;
-    margin-bottom: 1rem;
     
-}
-.checkbox{
-    margin-top: 2px;
-    
-
-}
-
-.l__checkbox{
-    display:inline;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-left: 0.5rem;
-    white-space: wrap;
-    
-}
-
-::placeholder{
-    font-size: 1.2rem;
-}
-
-.container .btn--block{
-    margin-top: 1rem;
-}
-
-/*Collapsible*/
-.collapsible__content{
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: opacity 0.7s;
-    color: black;
-}
- .collapsible--expanded .collapsible__content{
-    max-height: 100%;
-    opacity: 1;
-    transition: opacity 0.7s;
-}
-
-/*Navigation Bar*/
-.Nav{
-    display: flex;
-   justify-content: space-between;
-   background-color: #fff;
-   align-items: center;
-   flex-wrap: nowrap;
-   
-   
-}
-.nav__list{
-   max-width: 100%;
-}
-.nav__item > a {
-    color: #333;
-}
-
-.nav__item{
-    list-style: none;
-    margin-right: 2rem;
-    white-space: nowrap;
-    
-}
-.Nav .btn{
-    margin-right: 2rem;
-}
-    
-.nav__logo{
+/*LOGOS*/
+.companyLogo{
     width: 100px;
     height: 70px;
 }
-.menuicon{
-    width: 50px;
-    height: 50px;
-}
 @media screen and (min-width:768px){
-    .menuicon{
-    display: none;   
- }
-/* to make a collapsible item visible, set max height to 100% and opacity to 1 after setting opacity to 0*/
-     .nav__list{
-        max-height: 100%;
-        opacity: 1;
-        transform: opacity 7s;
-        display: flex;
-        width: auto;
-        align-items: flex-end;
-        font-size: 1.5rem;
+    .companyLogo{
+        width: 85px;
+        height: 60px;
     }
- }
+}
 
- /**Block**/
- .block{
-    border: 2px solid blck; 
-    height: 100vh;
+/*BUTTON*/
+.btn{
+    background-color: var(--color-btn);
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    font-weight: 700;
+    padding: 1.7rem 2.7rem;
+    height: 30px;
+    margin-top: 10px;
+    white-space: nowrap;
     display: flex;
-    padding: 1rem;
-    flex-direction: column;
-    
-    
-   }
-   div > P{
-    color: #fff;}
-    
-    .header__tagline{
-     font-size: 1.3rem;
-     font-weight: 300;
-     
-    }
-   
-   @media screen and (min-width:768px){
-     .block{
- 
-         display: flex;
-         flex-direction: row;
-     
+    justify-content: center;
+    align-items: center;
+}
+
+/*ICONS*/
+
+.menuIcon{
+    width: 33px;
+    height: 23px;
+}
+
+/*NAVIGATION BAR*/
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0.2rem 0.5rem;
+}
+
+ul{
+    display: flex;
     justify-content: space-between;
     align-items: center;
- 
-     }
-     .block__header{
-         max-width: 768px;
-     }
-     div > P{
-        color: #fff;}
-        
-        .header__tagline{
-         font-size: 1.3rem;
-         font-weight: 300;
-         
-        }
-   }
+}
+.navBar .btn{
+    margin-top: 20px;
+    margin-left: 100px;
+    
+
+}
+.navBar li{
+    
+    display: none;
+    
+}
+.navBar .menuIcon{
+    margin-top: 27px;
+    margin-right:20px ;
+}
+
+@media screen and (min-width:768px){
+    .navBar .menuIcon{
+        display: none;
+    }
+    .navBar .btn{
+        margin-top:12px;
+    }
+    .navBar li{
+        display: block;
+        font-size: 1.5rem;
+        white-space: nowrap;
+}
+}
+
+/**/
+ .heading, .tagline{
+    color: #fff;
+}
+.tagline{
+    font-weight: 200;
+}
+ @media screen and (min-width:768px){
+    .tagline{
+        font-size: 1.4rem;
+    }
+ }
